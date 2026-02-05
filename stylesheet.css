@@ -57,8 +57,12 @@ p {
     max-width: 65ch;
 }
 
+a {
+  color: #2D3748;
+}
+
 a:hover {
-  color: #FF9A76; /* Or any other color value, e.g., #0000FF, rgb(0, 0, 255) */
+  color: #FF9A76;
 }
 
 .box-container {
@@ -77,12 +81,6 @@ a:hover {
     border: 2px solid #e5e7eb;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes fadeIn {
