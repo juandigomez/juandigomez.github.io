@@ -22,8 +22,8 @@ body {
 }
 
 .banner {
-    color: #5c5c5c;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #2D3748;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
     padding: 0.5rem 1rem;
     margin: 0.8rem 0;
     animation: fadeIn 0.8s ease-in;
@@ -57,10 +57,8 @@ p {
     max-width: 65ch;
 }
 
-#AboutMe {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+a:hover {
+  color: #FF9A76; /* Or any other color value, e.g., #0000FF, rgb(0, 0, 255) */
 }
 
 .box-container {
@@ -85,12 +83,6 @@ p {
 .box:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-}
-
-.box h3 {
-    margin-top: 0;
-    color: #FF9A76;
-    font-size: 1.5rem;
 }
 
 @keyframes fadeIn {
