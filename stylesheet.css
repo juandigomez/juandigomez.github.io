@@ -1,10 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, sans-serif;
 }
 
 #WelcomePage {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #FFD5A4 0%, #FF9A76 100%);
     padding: 4rem 2rem;
     margin: 0;
     width: 100vw;
@@ -13,11 +14,39 @@ body {
 }
 
 .banner {
-    color: #ffffff;
+    color: #ffffff00;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     padding: 0.5rem 1rem;
     margin: 0.8rem 0;
     animation: fadeIn 0.8s ease-in;
+}
+
+h1 {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #111827;
+    margin: 0 0 0.6em;
+}
+
+h1.banner {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 0.5rem;
+}
+
+h2.banner {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #374151;
+    margin: 0 0 1em;
+    max-width: 65ch;
 }
 
 @keyframes fadeIn {
@@ -29,35 +58,4 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-h1 {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, sans-serif;
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  color: #111827; /* near-black */
-  margin: 0 0 0.6em;
-  text-wrap: balance;
-}
-
-h1.banner {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  margin-bottom: 0.5rem;
-}
-
-h2.banner {
-  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
-  font-weight: 400;
-  margin: 0.5rem 0;
-}
-
-p {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, sans-serif;
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #374151; /* soft gray */
-  margin: 0 0 1em;
-  max-width: 65ch; /* improves readability */
 }
